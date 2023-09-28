@@ -5,14 +5,14 @@ y = input('Enter your MySQL User ID: ')
 z = input('Enter the password for the mentioned MySQL User: ')
 
 try:
-    x = mysql.connector.connect(host=x, user=y, password=z)
+    m = mysql.connector.connect(host=x, user=y, password=z)
 
 except mysql.connector.Error:
     print('Sorry Check your Database Host User ID/Password!')
 
 try:
-    if x.is_connected():
-        db_info = x.get_server_info()
+    if m.is_connected():
+        db_info = m.get_server_info()
         print('Connection to MySQL', db_info, 'established successfully!')
 except AttributeError:
     print('Program Terminated')
