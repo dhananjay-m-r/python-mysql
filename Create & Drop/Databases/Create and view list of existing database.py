@@ -31,7 +31,7 @@ if View in Yes:
     print('The list of database present on your server is as below: ')
     for (databases) in y:
         print('-> ', databases[0])
-        c =+ 1
+        c += 1
     print('')
     print('Total no of database detected on your server is: ', c)
 
