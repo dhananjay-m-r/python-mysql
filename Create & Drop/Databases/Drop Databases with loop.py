@@ -34,7 +34,7 @@ print('')
 print('»»——————---——————-««')
 print('')
 
-print('Dropping a database means you will loose the data stores in it as well')
+print('Dropping a database means you will loose the data stored in it as well')
 
 def DropDatabase():
     m = input('Enter the database name which you would like to drop/delete: ')
@@ -50,7 +50,7 @@ def DropDatabase():
         ShowRemaining = input('Do you want to view the updated list of databases on your server (Y/N): ')
 
         d = 0
-
+        No = 'Nn'
         if ShowRemaining in Yes:
             databases = ("show databases")
             y.execute(databases)
@@ -70,21 +70,27 @@ def DropDatabase():
             print('')
             print('»»——————---——————-««')
             print('')
-
+        elif ShowRemaining not in No:
+            print('Invalid Input! Skipping the function!')
+            print('')
+        
     except mysql.connector.Error:
         print('Error Encountered! Database doesnt exist!!')
         print('Enter a database name that exists!!')
 
 print('')
-confirmation = input('Would you like to drop a table (Y/N): ')
-Yes = 'Yy'
 
-while confirmation in Yes:
-    DropDatabase()
+confirmation = input('Would you like to terminate the program (Y/N): ')
+Yes = 'Yy'
+No = 'Nn'
+
+while confirmation in No:
     LoopAgain = input('Do you want to drop more databases?(Y/N): ')
     print('')
     if LoopAgain in Yes:
         DropDatabase()
+    elif LoopAgain not in No:
+        print('Invalid Input! Kindly enter a valid Input')
     else:
         break
 
