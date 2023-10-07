@@ -1,15 +1,32 @@
-# Python - MySQL Basic Connection Establishment Program
+# About the source codes in this directory
 
-This repository contains various source codes which can enable you to check the connectivity with MySQL and Python.
+This directory contains the source codes for the following programs: 
 
-The source code for the first file is the basic required for the connection establishment.
+    -> 1_Connection Establishment without Error Handling.py
 
-The source code for the second file comes with error handling feature with addition to the connection establishment.
+    -> 2_Connection Establishment with error handling.py
 
-The source code for the third file is advanced program where the details of the server like Host ID, User ID & the password is given as input which then uses the input information to establish connection. And ofcourse it comes with error handling feature.
+    -> 3_Connection Establishment with error handling & User Input
 
-Note: For the 1st and 2nd file kindly make sure to tune the Host ID, User ID, Password according to the one set on your device.
+# About Program 1_Connection Establishment without Error Handling.py
 
-»»——————---——————-««
+The source code for this program is to check whether your python program is able to establish connection with MySQL Database.
 
-Source Code by: Dhananjay M.R
+Note: 
+
+    -> This source code doesn't come with error handling. For source code with error handling kindly check the other program in the directory
+
+    -> Details such as HostID, User ID & Password are predefined, therefore kindly tune the source code using a editor according to your settings to establish the connection.
+
+# About program 2_Connection Establishment with error handling.py
+
+Unlike the previous program, this program comes with error handling therefore you wont get a runtime error with a dozens of lines of errors on your screen. 
+
+But Again, details such as HostID, User ID & Password are predefined, therefore kindly tune the source code using a editor according to your settings to establish the connection.
+
+# About program 3_Connection Establishment with error handling & User Input
+
+The source code for this program includes the feature of both the previous files, but in addition to that, in this program you dont have to predefine the details such as HostID, User ID & Password as those details will be asked by the user for the input for respective details during runtime.
+
+# »»——--Thanks for visiting the repository--——-««
+Repository by: Dhananjay M.R
